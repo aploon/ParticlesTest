@@ -8,77 +8,77 @@ async function loadParticles(options) {
 }
 
 const configs = [
-  // {
-  //   particles: {
-  //     number: {
-  //       value: 0
-  //     },
-  //     color: {
-  //       value: "#ff0000",
-  //       animation: {
-  //         enable: true,
-  //         speed: 20,
-  //         sync: true
-  //       }
-  //     },
-  //     shape: {
-  //       type: "character",
-  //       options: {
-  //         "character": {
-  //           "value": ["0", "1"], // the text to use as particles, any string is valid, for escaping unicode char use the `\uXXXX` syntax
-  //           "font": "Verdana", // the font to use to draw the text. If the font needs an external css or javascript like FontAwesome you should include all the necessary files on your own
-  //           "style": "", // any additional css style to add to the text
-  //           "weight": "" // the css weight property, some fonts like font awesome have a specified weight, check the documentation if needed
-  //         }
-  //       }
-  //     },
-  //     opacity: {
-  //       value: 0.15
-  //     },
-  //     size: {
-  //       value: { min: 1, max: 3 }
-  //     },
-  //     move: {
-  //       enable: true,
-  //       speed: 6,
-  //       direction: "none"
-  //     }
-  //   },
-  //   interactivity: {
-  //     events: {
-  //       onHover: {
-  //         enable: true,
-  //         mode: "trail"
-  //       }
-  //     },
-  //     modes: {
-  //       trail: {
-  //         delay: 0.01,
-  //         pauseOnStop: true,
-  //         particles: {
-  //           color: {
-  //             value: "#000000",
-  //             animation: {
-  //               enable: true,
-  //               speed: 200,
-  //               sync: false
-  //             }
-  //           },
-  //           move: {
-  //             outModes: "destroy"
-  //           },
-  //           size: {
-  //             random: true,
-  //             value: 20
-  //           }
-  //         }
-  //       }
-  //     }
-  //   },
-  //   background: {
-  //     color: "#ffffff"
-  //   }
-  // },
+  {
+    particles: {
+      number: {
+        value: 0
+      },
+      color: {
+        value: "#ff0000",
+        animation: {
+          enable: true,
+          speed: 20,
+          sync: true
+        }
+      },
+      shape: {
+        type: "character",
+        options: {
+          "character": {
+            "value": ["0", "1"], // the text to use as particles, any string is valid, for escaping unicode char use the `\uXXXX` syntax
+            "font": "Verdana", // the font to use to draw the text. If the font needs an external css or javascript like FontAwesome you should include all the necessary files on your own
+            "style": "", // any additional css style to add to the text
+            "weight": "" // the css weight property, some fonts like font awesome have a specified weight, check the documentation if needed
+          }
+        }
+      },
+      opacity: {
+        value: 0.15
+      },
+      size: {
+        value: { min: 1, max: 3 }
+      },
+      move: {
+        enable: true,
+        speed: 6,
+        direction: "none"
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: {
+          enable: true,
+          mode: "trail"
+        }
+      },
+      modes: {
+        trail: {
+          delay: 0.01,
+          pauseOnStop: true,
+          particles: {
+            color: {
+              value: "#000000",
+              animation: {
+                enable: true,
+                speed: 200,
+                sync: false
+              }
+            },
+            move: {
+              outModes: "destroy"
+            },
+            size: {
+              random: true,
+              value: 20
+            }
+          }
+        }
+      }
+    },
+    background: {
+      color: "#ffffff"
+    }
+  },
   {
     "autoPlay": true,
     "background": {
@@ -601,338 +601,6 @@ const configs = [
       }
     }
   }
-  // {
-  //   backgroundMask: {
-  //     enable: true,
-  //     cover: {
-  //       value: {
-  //         r: 0,
-  //         g: 0,
-  //         b: 0
-  //       }
-  //     }
-  //   },
-  //   background: {
-  //     image: "url('https://particles.js.org/images/background.jpg')",
-  //     size: "100% 100%",
-  //     repeat: "no-repeat"
-  //   },
-  //   particles: {
-  //     color: {
-  //       value: ["#1E00FF", "#FF0061", "#E1FF00", "#00FF9E"],
-  //       animation: {
-  //         enable: true,
-  //         speed: 30
-  //       }
-  //     },
-  //     move: {
-  //       direction: "bottom",
-  //       enable: true,
-  //       outModes: {
-  //         default: "out"
-  //       },
-  //       size: true,
-  //       speed: {
-  //         min: 1,
-  //         max: 3
-  //       }
-  //     },
-  //     number: {
-  //       value: 700,
-  //       density: {
-  //         enable: true,
-  //         area: 800
-  //       }
-  //     },
-  //     opacity: {
-  //       value: 1
-  //     },
-  //     rotate: {
-  //       value: {
-  //         min: 0,
-  //         max: 360
-  //       },
-  //       direction: "random",
-  //       move: true,
-  //       animation: {
-  //         enable: true,
-  //         speed: 60
-  //       }
-  //     },
-  //     tilt: {
-  //       direction: "random",
-  //       enable: true,
-  //       move: true,
-  //       value: {
-  //         min: 0,
-  //         max: 360
-  //       },
-  //       animation: {
-  //         enable: true,
-  //         speed: 60
-  //       }
-  //     },
-  //     shape: {
-  //       type: ["circle", "square", "polygon"],
-  //       options: {
-  //         polygon: [
-  //           {
-  //             sides: 5
-  //           },
-  //           {
-  //             sides: 6
-  //           }
-  //         ]
-  //       }
-  //     },
-  //     size: {
-  //       value: {
-  //         min: 3,
-  //         max: 5
-  //       }
-  //     },
-  //     roll: {
-  //       darken: {
-  //         enable: true,
-  //         value: 30
-  //       },
-  //       enlighten: {
-  //         enable: true,
-  //         value: 30
-  //       },
-  //       enable: true,
-  //       speed: {
-  //         min: 15,
-  //         max: 25
-  //       }
-  //     },
-  //     wobble: {
-  //       distance: 30,
-  //       enable: true,
-  //       move: true,
-  //       speed: {
-  //         min: -15,
-  //         max: 15
-  //       }
-  //     }
-  //   }
-  // },
-  // {
-  //   background: {
-  //     color: "#000"
-  //   },
-  //   emitters: {
-  //     direction: "top",
-  //     life: {
-  //       count: 0,
-  //       duration: 0.1,
-  //       delay: 0.1
-  //     },
-  //     rate: {
-  //       delay: 0.15,
-  //       quantity: 1
-  //     },
-  //     size: {
-  //       width: 100,
-  //       height: 0
-  //     },
-  //     position: {
-  //       y: 100,
-  //       x: 50
-  //     }
-  //   },
-  //   particles: {
-  //     number: {
-  //       value: 0
-  //     },
-  //     destroy: {
-  //       bounds: {
-  //         top: 30
-  //       },
-  //       mode: "split",
-  //       split: {
-  //         count: 1,
-  //         factor: {
-  //           value: 0.333333
-  //         },
-  //         rate: {
-  //           value: 100
-  //         },
-  //         particles: {
-  //           stroke: {
-  //             width: 0
-  //           },
-  //           color: {
-  //             value: ["#ff595e", "#ffca3a", "#8ac926", "#1982c4", "#6a4c93"]
-  //           },
-  //           number: {
-  //             value: 0
-  //           },
-  //           collisions: {
-  //             enable: false
-  //           },
-  //           destroy: {
-  //             bounds: {
-  //               top: 0
-  //             }
-  //           },
-  //           opacity: {
-  //             value: {
-  //               min: 0.1,
-  //               max: 1
-  //             },
-  //             animation: {
-  //               enable: true,
-  //               speed: 0.7,
-  //               sync: false,
-  //               startValue: "max",
-  //               destroy: "min"
-  //             }
-  //           },
-  //           shape: {
-  //             type: "circle"
-  //           },
-  //           size: {
-  //             value: 2,
-  //             animation: {
-  //               enable: false
-  //             }
-  //           },
-  //           life: {
-  //             count: 1,
-  //             duration: {
-  //               value: {
-  //                 min: 1,
-  //                 max: 2
-  //               }
-  //             }
-  //           },
-  //           move: {
-  //             enable: true,
-  //             gravity: {
-  //               enable: true,
-  //               acceleration: 9.81,
-  //               inverse: false
-  //             },
-  //             decay: 0.1,
-  //             speed: {
-  //               min: 10,
-  //               max: 25
-  //             },
-  //             direction: "outside",
-  //             random: true,
-  //             straight: false,
-  //             outModes: "destroy"
-  //           }
-  //         }
-  //       }
-  //     },
-  //     life: {
-  //       count: 1
-  //     },
-  //     shape: {
-  //       type: "line"
-  //     },
-  //     size: {
-  //       value: {
-  //         min: 0.1,
-  //         max: 50
-  //       },
-  //       animation: {
-  //         enable: true,
-  //         sync: true,
-  //         speed: 90,
-  //         startValue: "max",
-  //         destroy: "min"
-  //       }
-  //     },
-  //     stroke: {
-  //       color: {
-  //         value: "#ffffff"
-  //       },
-  //       width: 1
-  //     },
-  //     rotate: {
-  //       path: true
-  //     },
-  //     move: {
-  //       enable: true,
-  //       gravity: {
-  //         acceleration: 15,
-  //         enable: true,
-  //         inverse: true,
-  //         maxSpeed: 100
-  //       },
-  //       speed: {
-  //         min: 10,
-  //         max: 20
-  //       },
-  //       outModes: {
-  //         default: "destroy",
-  //         top: "none"
-  //       },
-  //       trail: {
-  //         fill: {
-  //           color: "#000"
-  //         },
-  //         enable: true,
-  //         length: 10
-  //       }
-  //     }
-  //   }
-  // },
-  // {
-  //   particles: {
-  //     number: {
-  //       value: 80,
-  //       density: {
-  //         enable: true
-  //       }
-  //     },
-  //     color: {
-  //       value: "#ff0000",
-  //       animation: {
-  //         enable: true,
-  //         speed: 360,
-  //         sync: true
-  //       }
-  //     },
-  //     effect: {
-  //       type: "trail",
-  //       options: {
-  //         trail: {
-  //           fade: true,
-  //           length: {
-  //             min: 10,
-  //             max: 30
-  //           }
-  //         }
-  //       }
-  //     },
-  //     shape: {
-  //       type: "circle"
-  //     },
-  //     size: {
-  //       value: 10
-  //     },
-  //     move: {
-  //       path: {
-  //         enable: true,
-  //         options: {
-  //           size: 32,
-  //           draw: false,
-  //           increment: 0.004
-  //         },
-  //         generator: "simplexNoise"
-  //       },
-  //       enable: true,
-  //       speed: { min: 6, max: 15 }
-  //     }
-  //   },
-  //   background: {
-  //     color: "#000000"
-  //   }
-  // }
 ];
 
 loadParticles(configs);
